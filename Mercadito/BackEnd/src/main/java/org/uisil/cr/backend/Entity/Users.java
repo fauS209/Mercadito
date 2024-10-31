@@ -9,6 +9,7 @@ import lombok.*;
 @Setter
 @ToString
 @Entity
+@Builder
 @Table
 public class Users {
 
@@ -22,6 +23,20 @@ public class Users {
     private String email;
     @Column(name = "password",length = 100)
     private String password;
+    @Column(name = "imgName",length = 50)
+    private String imgName;
+    @Column(name = "imgType",length = 50)
+    private String imgType;
+    @Column(name = "imgData" )
+    @Lob
+    private byte[]imgData;
+
+    public Users(int userId, String userName, String email, String password) {
+        this.userId = userId;
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+    }
 
 
 }
