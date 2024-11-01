@@ -17,7 +17,7 @@ import java.io.IOException;
 
 @RestController
 @CrossOrigin
-@RequestMapping("api/v1/mercadito")
+@RequestMapping("api/v1/mercadito/users")
 public class UserController {
 
     @Autowired
