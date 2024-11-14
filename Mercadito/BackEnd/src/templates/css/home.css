@@ -1,0 +1,98 @@
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+}
+
+body {
+    background-image: url('/Images/mesa-madera-entorno-mercado-borroso_1207264-3739.jpg');
+    background-size: cover;
+    /* cubrir todo el área con imagen */
+    background-position: center;
+    /* centra la imagen */
+    background-repeat: no-repeat;
+    /* evita que la imagen se repita */
+    height: 100vh;
+}
+
+/*ajustes card-title*/
+.p1 {
+    font-size: 24px;
+    color: rgba(80, 240, 110, 0.891);
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    /*color: #28a745;*/
+    /*un posible color verde que combina con el mercadito*/
+
+}
+
+.bodytext {
+    margin: auto;
+    width: 18rem;
+    height: 8rem;
+    color: rgb(255, 255, 255);
+    /*color del texto*/
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+
+}
+
+.card-body {
+    width: 300px;
+    /*ancho del texto*/
+    padding: 20px;
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    box-shadow: none;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 20rem;
+    height: 30rem;
+}
+
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.navbar-nav {
+    font-size: 20px;
+
+}
+
+div .nav-link {
+    color: black;
+    font-family: sans-serif;
+    margin: 0 30px;
+    /* Espacio entre los links */
+}
+
+
+.botoncito {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(44, 146, 44, 0.923);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
