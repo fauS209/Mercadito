@@ -5,35 +5,23 @@ import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 @ToString
 @Entity
 @Table
 public class Users {
 
     @Id
-    @Column(name = "userId", length = 10)
+    @Column(name = "userId",length = 10)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int userId;
+    private int userId;
     @Column(name = "userName",length = 50)
     private String userName;
     @Column(name = "email",length = 100)
     private String email;
     @Column(name = "password",length = 100)
     private String password;
-    @Column(name = "imgName",length = 50)
-    private String imgName;
-    @Column(name = "imgType",length = 50)
-    private String imgType;
-    @Column(name = "imgData" )
-    private byte[]imgData;
-
-    public Users(int userId, String userName, String email, String password) {
-        this.userId = userId;
-        this.userName = userName;
-        this.email = email;
-        this.password = password;
-    }
 
 
 }
