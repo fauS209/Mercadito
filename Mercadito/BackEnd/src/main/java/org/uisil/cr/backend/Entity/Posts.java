@@ -15,6 +15,8 @@ public class Posts {
     @Column(name = "postsId", length = 10)
     @GeneratedValue(strategy = GenerationType.AUTO)
     public int postsId;
+    @Column(name = "userId", length = 10)
+    public int userId;
     @Column(name = "title",length = 50)
     private String title;
     @Column(name = "description",length = 200)

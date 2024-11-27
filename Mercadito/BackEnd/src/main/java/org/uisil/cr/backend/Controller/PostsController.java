@@ -9,6 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.uisil.cr.backend.Dto.PostDto;
 import org.uisil.cr.backend.Dto.UserDto;
 import org.uisil.cr.backend.Entity.Posts;
+import org.uisil.cr.backend.Entity.Users;
 import org.uisil.cr.backend.Service.PostsService;
 import org.uisil.cr.backend.response.responseMessage;
 
@@ -27,6 +28,7 @@ public class PostsController {
                                             @RequestParam("postDto") String postDtoStr) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         PostDto postDto = objectMapper.readValue(postDtoStr, PostDto.class);
+
         Posts createdPost = postsService.createPost(file, postDto);
         return new ResponseEntity<>(createdPost, HttpStatus.CREATED);
     }

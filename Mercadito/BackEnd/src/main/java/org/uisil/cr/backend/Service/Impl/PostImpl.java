@@ -10,6 +10,7 @@ import org.uisil.cr.backend.Entity.Posts;
 import org.uisil.cr.backend.Entity.Users;
 import org.uisil.cr.backend.Repository.PostsRepository;
 import org.uisil.cr.backend.Service.PostsService;
+import org.uisil.cr.backend.Service.UserService;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -23,6 +24,8 @@ public class PostImpl implements PostsService {
 
     @Autowired
     private PostsRepository postsRepository;
+
+
 
     @Override
     public Posts createPost(MultipartFile file, PostDto postDto) throws IOException {
@@ -46,8 +49,8 @@ public class PostImpl implements PostsService {
 
         try {
             String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-
             Posts posts = new Posts();
+            posts.setUserId(postDto.getUserId());
             posts.setTitle(postDto.getTitle());
             posts.setDescription(postDto.getDescription());
             posts.setTelNumber(postDto.getTelNumber());
