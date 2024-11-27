@@ -1,4 +1,52 @@
 div{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(176, 68, 68);
     text-align: center;
+    margin:auto;
+    height: auto;
 }
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .navbar a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+
+  .navbar {
+    position: fixed; /* Fija la barra en la parte superior de la pantalla */
+    top: 0; /* Asegura que esté pegada al borde superior */
+    left: 0; /* Asegura que comience desde el borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 60px; /* Ajusta la altura según tu diseño */
+    background-color: #333; /* Color de fondo */
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los enlaces verticalmente */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+    padding: 0 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    font-size: 1.2rem; /* Tamaño del texto */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #1e90ff; /* Cambia de color al pasar el cursor */
+  }
+  

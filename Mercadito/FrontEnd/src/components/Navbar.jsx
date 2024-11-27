@@ -4,20 +4,20 @@ import './Navbar.css'
 export const Navbar = () => {
   return (
     
-    <div >
+    <div className='navbar'>
     
-        <p>
+      
         <Link to={"/Login"}> Login</Link>
-        </p>
-        <p>
+     
         <Link to={"/App"}>App </Link>
-        </p>
-        <p>
+       
         <Link to={"/Contact"}>Contact</Link>
-        </p>
-        <p>
+       
         <Link to={"/Dashbord"}>Dashboard</Link>
-        </p>
+        
+        <Link to={"/CreatePost"}>CreatePost</Link>
+
+        <Link to={"/Register"}>Register</Link>
 
     </div>
     

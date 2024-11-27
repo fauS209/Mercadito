@@ -11,3 +11,51 @@
   .btn:hover {
     background-color: #49cb28;
   }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 20px;
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-content {
+    padding-top: 60px; /* Ajusta según la altura del navbar */
+  }
+  
+
+  .main-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: calc(100vh - 60px); /* Resta la altura del navbar */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+  
+  h1 {
+    font-size: 3rem; /* Ajusta el tamaño del texto según tu diseño */
+    color: #333; /* Color del texto */
+  }
+  
+  
