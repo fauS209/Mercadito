@@ -7,7 +7,7 @@ export const Navbar = () => {
     <div >
     
         <p>
-        <Link to={"/Home"}> Home</Link>
+        <Link to={"/Login"}> Login</Link>
         </p>
         <p>
         <Link to={"/App"}>App </Link>
