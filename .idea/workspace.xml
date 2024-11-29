@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84db79a9-8618-42a9-b812-72dee9ff544c" name="Changes" comment="" />
+    <list default="true" id="84db79a9-8618-42a9-b812-72dee9ff544c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/BackEnd/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/BackEnd/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/BackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/BackEnd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/FrontEnd/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/FrontEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/FrontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/FrontEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/FrontEnd/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/FrontEnd/src/components/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/FrontEnd/src/routes/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/FrontEnd/src/routes/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mercadito/FrontEnd/src/routes/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Mercadito/FrontEnd/src/routes/Register.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fauS209"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fauS209/Mercadito.git",
+    "accountId": "76fe39d9-79a8-4cff-bcdf-85b1845116c5"
+  }
+}]]></component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe" />
   <component name="ProjectColorInfo">{
@@ -30,8 +53,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Developer-Front-End",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/OneDrive/Escritorio/El Mercadito/Mercadito/Mercadito/BackEnd",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +86,7 @@
       <workItem from="1730511923385" duration="381000" />
       <workItem from="1730601916558" duration="142000" />
       <workItem from="1730602070697" duration="939000" />
+      <workItem from="1732820566977" duration="678000" />
     </task>
     <servers />
   </component>

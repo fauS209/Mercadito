@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-242.23726.103">
-    <data-source name="postgres@aws-0-us-west-1.pooler.supabase.com" uuid="ef393bcf-8b83-4d62-8624-e67f8f9cdefa">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
-      <schema-mapping />
-    </data-source>
-  </component>
-</project>
