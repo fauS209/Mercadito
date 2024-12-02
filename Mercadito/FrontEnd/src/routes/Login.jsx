@@ -1,47 +1,45 @@
-import React, { useState } from "react";
-import "./css/Login.css";
-import Navbar from "../components/Navbar";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-
+import React, { useState } from 'react'
+import "./css/Login.css"
+import Navbar from '../components/Navbar';
+import axios from 'axios';
 export const Login = () => {
-const [email, setEmail] = useState("");
-const [password, setPassword] = useState("");
-const [errorMessage, setErrorMessage] = useState(""); // Para manejar errores
-const navigate = useNavigate(); // Hook para redirigir
 
-async function login(event) {
-    event.preventDefault();
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
 
-    try {
-    const res = await axios.post("http://localhost:8080/api/v1/mercadito/users/login", {
-        email: email,
+    async function login(event) {
+        event.preventDefault();
+        await axios.post("http://localhost:8080/api/v1/mercadito/users/login",{
+        email:email,
         password: password,
-        });
+        }).then((res)=>{
+            console.log(res.data);
 
-    
-    const { status } = res.data;
+            if(res.data.message == "Email not exists"){
+                alert("Email not exists")
+            }
+            else if(res.data.message == "Bienvenido"){
+                alert("Bienvenido")
+                
+            }
 
-    if (status === true) {
-        navigate("/Dashbord"); 
-    } else {
-        setErrorMessage("Credenciales incorrectas. Por favor, intenta de nuevo.");
+
+        }
+    )
+        
     }
-    } catch (error) {
-        setErrorMessage("Ocurrió un error al iniciar sesión. Verifica tu conexión.");
-        console.error(error);
-    }
-}
 
-    return (
+return (
+
+
     <div className="container">
-    <Navbar />
-    <h2 className="header">Login</h2>
-    <form className="form" onSubmit={login}>
-    
-        <div className="input-group">
+        <Navbar/>
+    <h2 className="header">Inicio de Sesión</h2>
+    <form className="form">
+      {/* Campo de correo electrónico */}
+    <div className="input-group">
         <label htmlFor="email" className="label">
-            Correo Electrónico:
+        Correo Electrónico:
         </label>
         <input
             type="email"
@@ -50,34 +48,41 @@ async function login(event) {
             required
             className="input"
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={(event)=>{
+            setEmail(event.target.value)
+        }}
         />
-        </div>
         
-        <div className="input-group">
+    </div>
+
+      {/* Campo de contraseña */}
+    <div className="input-group">
         <label htmlFor="password" className="label">
-            Contraseña:
+        Contraseña:
         </label>
         <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            className="input"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
+        type="password"
+        id="password"
+        name="password"
+        required
+        className="input"
+        value={password}
+        onChange={(event)=>{
+        setPassword(event.target.value)
+    }}
         />
-        </div>
-
-        
-        {errorMessage && <p className="error">{errorMessage}</p>}
-
-        <button type="submit" className="button">
-        Login
-        </button>
-    </form>
     </div>
-);
-};
 
+      {/* Botón de inicio de sesión */}
+    <button
+    type="submit"
+    className="button"
+    onClick={login}
+    >
+        Iniciar Sesión
+    </button>
+    </form>
+</div>
+    )
+}
 export default Login;
