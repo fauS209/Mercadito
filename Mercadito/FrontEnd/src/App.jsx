@@ -12,7 +12,7 @@ function App() {
     <>
     <Navbar/>
       <h1>App</h1>
-    <Link to={'/Dashbord'} className='btn'> click</Link>
+    
     </>
   );
 }
