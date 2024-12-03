@@ -102,8 +102,13 @@ div.logo-mercadito {
 .loguito {
   width: 60px;
   height: auto;
+  background-image: url(/src/assets/logoMercadito.png);
 }
 
+.card-image {
+  height: 20px;
+  width: auto;
+}
 
 
 /* .footer {

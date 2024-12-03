@@ -19,7 +19,8 @@ function App() {
           <div className="card-body">
             <h5 className="card-title">Bienvenido a su mercadito de confianza</h5>
             <div className='loguito'>
-              <img src= "/logoMercadito.png" alt="loguito"  className='card-image'/>
+              <img src= "/logoMercadito.png" alt="loguito"  
+              className='card-image'/>
             </div>
             <div className='card-text'>
               <p>“Productos frescos y de calidad, apoyando a nuestros productores locales para que disfrutes de una compra confiable y responsable.”</p>
