@@ -1,75 +1,47 @@
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  background-color: #0eaf59;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  align-items: end;
-}
 
 
 .btn:hover {
-  background-color: #49cb28;
+  background-color: #298312;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-  background-color: #48a25b;
+  background-color: #459552;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
   text-align: center;
+  margin-bottom: 3%;
 }
 
 .btn:hover {
   background-color: #0fb300;
 }
 
-.button-container {
-  background-color: green;
-  display: flex;
-  justify-content: center; /* Centra el botón horizontalmente */
-  
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-top: 20px;
-}
-
-
-
 
 .main-content {
-  padding-top: 60px;
+  padding-top: 10px;
   /* Ajusta según la altura del navbar */
 }
 
 
 .main-content {
   display: flex;
-  justify-content: center;
-  /* Centra horizontalmente */
-  align-items: center;
-  /* Centra verticalmente */
-  height: calc(100vh - 60px);
-  /* Resta la altura del navbar */
-  text-align: center;
-  /* Asegura que el texto esté centrado */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: calc(100vh - 60px); /* Resta la altura del navbar */
+  text-align: center; /* Asegura que el texto esté centrado */
 }
 
+/*  Estilo para "El Mercadito Tigreño"  */
 h1 {
-  font-size: 3rem;
-  /* Ajusta el tamaño del texto según tu diseño */
-  color: #333;
-  /* Color del texto */
+  margin-top: -15px;   /* Espacio entrre h1 y navbar */
+  font-size: 2rem; /* Ajusta el tamaño del texto según tu diseño */
+  color: #333;  /* Color del texto */
+
 }
 
 
@@ -92,10 +64,12 @@ h1 {
 }
 
 .card {
-  height: 100px;
-  width: auto;
-  padding: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
   background-color: transparent;
+  align-items: center;
+  
 }
 
 
@@ -114,9 +88,10 @@ div.card-body {
 }
 
 .card-text {
-  height: 50px;
+  width: 60%;
+  height: 20%;
   background-color: rgba(0, 0, 0, 0.2);
-  height: 40px;
+  border-radius: 10px;
 }
 
 div.logo-mercadito {
@@ -124,8 +99,9 @@ div.logo-mercadito {
   height: auto;
 }
 
-.botoncito {
-  align-items: end;
+.loguito {
+  width: 60px;
+  height: auto;
 }
 
 
