@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Usa 'react-router-dom' en vez de 'react-router'
-import './Navbar.css';
+import './Footers';
+import '../css/Navbar.css'
 
 export const Navbar = () => {
   

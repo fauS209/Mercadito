@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footers.css';
+import '../css/Footers.css';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 export const Footers = () => {
@@ -17,7 +17,7 @@ export const Footers = () => {
         </a>
       </div>
       <div className="footer-references">
-        <p>Creado por <span>Ariel Potoy</span> y <span>Fauricio Salazar </span></p>
+        <p>Creado por <span>Ariel Potoy</span> y <span>Fauricio Salazar</span></p>
       </div>
     </footer>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/Login.css";
+import "../css/Login.css";
 import Navbar from "../components/Navbar";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -42,7 +42,7 @@ async function login(event) {
     
         <div className="input-group">
         <label htmlFor="email" className="label">
-            Correo Electrónico:
+            Correo Electrónico
         </label>
         <input
             type="email"
@@ -56,7 +56,7 @@ async function login(event) {
 
         <div className="input-group">
         <label htmlFor="password" className="label">
-            Contraseña:
+            Contraseña
         </label>
         <input
             type="password"

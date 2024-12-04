@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./css/CreatePost.css"
+import "../css/CreatePost.css"
 import Navbar from "../components/Navbar";
 import Footers from "../components/Footers";
 

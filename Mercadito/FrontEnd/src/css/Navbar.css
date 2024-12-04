@@ -17,7 +17,7 @@
 
 /* Estilo de los enlaces del navbar */
 .navbar a {
-  color: white;
+  color: rgb(12, 12, 12);
   text-decoration: none;
   font-size: 16px;
   margin: 0 15px; /* Espaciado entre los enlaces */

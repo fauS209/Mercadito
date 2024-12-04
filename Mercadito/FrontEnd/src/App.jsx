@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import mesaMadera from './assets/mesa-madera.jpg'
-import './App.css'
+import './routes/css/App.css'
 import navbar, { Navbar } from './components/Navbar'
 import { Link } from 'react-router'
 import Footers from './components/Footers'

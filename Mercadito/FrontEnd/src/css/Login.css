@@ -43,20 +43,21 @@ body {
 /* Etiquetas */
 .label {
   font-size: 14px;
-  color: #555;
+  color: #0c0c0c;
   align-self: flex-start; /* Alinea las etiquetas a la izquierda */
   margin-left: 5px;
 }
 
 /* Campos de entrada */
 .input {
+  justify-content: center;
   width: 100%;
   max-width: 350px; /* Limita el ancho */
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px; /* Bordes redondeados */
-  background-color: #f9f9f9;
+  background-color: #3d3c3c;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: border 0.3s, box-shadow 0.3s;
 }

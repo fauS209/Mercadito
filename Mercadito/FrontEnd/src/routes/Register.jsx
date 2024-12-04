@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/Login.css";
+import "../css/Register.css";
 import Navbar from "../components/Navbar";
 import Footers from "../components/Footers";
 import axios from "axios";
@@ -34,10 +34,10 @@ async function register(event) {
 return (
     <div className="container">
     <Navbar />
-        <h2 className="header">Register</h2>
+        <h2 className="header">Registrarse</h2>
         <form className="form" onSubmit={register}>
         <div className="input-group">
-            <label htmlFor="userName" className="label">Nombre:</label>
+            <label htmlFor="userName" className="label">Nombre</label>
                 <input
             type="text"
             id="userName"
@@ -50,7 +50,7 @@ return (
         </div>
 
         <div className="input-group">
-        <label htmlFor="email" className="label">Correo Electrónico:</label>
+        <label htmlFor="email" className="label">Correo Electrónico</label>
         <input
             type="email"
             id="email"
@@ -62,7 +62,7 @@ return (
         />
         </div>
         <div className="input-group">
-        <label htmlFor="password" className="label">Contraseña:</label>
+        <label htmlFor="password" className="label">Contraseña</label>
         <input
             type="password"
             id="password"

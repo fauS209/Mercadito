@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./css/Dashbord.css";
+import "../css/Dashbord.css";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footers from "../components/Footers";
