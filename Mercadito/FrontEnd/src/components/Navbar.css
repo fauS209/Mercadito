@@ -1,7 +1,7 @@
 /* Estilos generales del navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
-  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2); /* Fondo oscuro translúcido */
+  padding: 7px;
   display: flex;
   justify-content: center; /* Centra los elementos */
   align-items: center;
@@ -23,10 +23,10 @@
 }
 
 .navbar a:hover {
-  color: #007bff;
+  color: greenyellow;
+  font-size: 17px;
 }
-
-/* Botón del menú para móviles (hamburguesa) */
+/* Botón del menú para móviles */
 .menu-toggle {
   display: none;
   flex-direction: column;

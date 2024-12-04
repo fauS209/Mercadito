@@ -1,169 +1,155 @@
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  background-color: #0eaf59;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  align-items: end;
-}
-
-
-.btn:hover {
-  background-color: #49cb28;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #48a25b;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  text-align: center;
-}
-
-.btn:hover {
-  background-color: #0fb300;
-}
-
-.button-container {
-  background-color: green;
-  display: flex;
-  justify-content: center; /* Centra el botón horizontalmente */
-  
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-top: 20px;
-}
-
-
-
-
-.main-content {
-  padding-top: 60px;
-  /* Ajusta según la altura del navbar */
-}
-
-
-.main-content {
-  display: flex;
-  justify-content: center;
-  /* Centra horizontalmente */
-  align-items: center;
-  /* Centra verticalmente */
-  height: calc(100vh - 60px);
-  /* Resta la altura del navbar */
-  text-align: center;
-  /* Asegura que el texto esté centrado */
-}
-
-h1 {
-  font-size: 3rem;
-  /* Ajusta el tamaño del texto según tu diseño */
-  color: #333;
-  /* Color del texto */
-}
-
-
-/*Contenedor de Pagina de inicio y fondo con nuestra imagen*/
+/* General Styles */
 .app-container {
-  text-align: center;
-  padding: 200px;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* Centrar en la pantalla */
-  background-image: url(/src/assets/mesa-madera.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.background-image {
-  width: 100%;
-  height: auto;
-  margin: 40px 100px;
-}
-
-.card {
-  height: 100px;
-  width: auto;
   padding: 20px;
-  background-color: transparent;
+  font-family: Arial, sans-serif;
+  background-image: url('/src/assets/mesa-madera.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* La imagen cubre toda la pantalla */
+  background-position: center center; /* La imagen siempre está centrada */
+  background-attachment: fixed; /* Fija el fondo durante el scroll */
+  min-height: 100vh; /* La altura mínima es 100% de la pantalla */
+  max-width: 100%; /* Asegura que el contenedor cubra todo el ancho de la pantalla */;
+
+
 }
 
 
-div.card-body {
-  background-color: rgba(0, 0, 0, 0.2);
 
-}
-.card-body {
+.titulo {
+  margin-top: 20px;
   color: #ffffff;
-  border-radius: 20px;
+  text-shadow: 0 0 10px cyan,
+  0 0 20px cyan,
+  0 0 40px cyan,
+  0 0 80px cyan;
 }
 
+.card-title1 {
+  color: #ffffff;
+  text-shadow: 0 0 10px cyan,
+  0 0 20px cyan,
+  0 0 40px cyan;
+}
 
 .card-title {
-  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+
+.card {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* border: 1px solid #ddd; */
+  margin-top: 15%;
+  border-radius: 8px;
+  padding: 20px;
+  /* margin: 20px auto; */
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;  /* Para apilar los elementos verticalmente */
+  justify-content: center; /* Centrar el contenido verticalmente */
+  align-items: center;     /* Centrar el contenido horizontalmente */
+  text-align: center;      /* Asegura que el texto dentro de la tarjeta esté centrado */
+}
+
+.card-body {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .card-text {
-  height: 50px;
   background-color: rgba(0, 0, 0, 0.2);
-  height: 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  margin-top: 15px;
 }
 
-div.logo-mercadito {
-  width: 50px;
+.logo-mercadito {
+  max-width: 150px; /* Evitar que el logo sea demasiado grande */
   height: auto;
+  margin-bottom: 15px;
 }
 
-.botoncito {
-  align-items: end;
-}
-
-
-
-/* .footer {
-  align-items: end;
-  background-color: #343a40;
-  color: #fff;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #439a41;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
   text-align: center;
-  padding: 20px;
-  margin-top: auto;
+  margin-top: 20px;
+  align-items: center;
+  transition: background-color 0.3s ease;  /* Suaviza el cambio de color */
+  width: auto;
 }
 
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
+.btn:hover {
+  background-color: #68ba6f;
+  color: black;
 }
 
-.footer a {
-  color: #007bff;
-  text-decoration: none;
-  margin: 0 10px;
+footer {
+  margin-top: 40px;
+  text-align: center;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+/* Diseño Responsive  */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+    margin-top: 60%;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px 0;
+  }
 }
 
-.footer-links {
-  margin-top: 10px;
-}
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
 
-.footer-link {
-  margin: 0 5px;
-  color: #ddd;
-  text-decoration: none;
-}
+  .card {
+    padding: 10px;
+  }
 
-.footer-link:hover {
-  color: #fff; 
-}*/
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
