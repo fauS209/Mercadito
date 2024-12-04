@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Container for Posts */
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual Post */
+  .post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px; /* Define el tamaño de las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Post Image */
+  .post img {
+    width: 100%; /* Se ajusta al contenedor */
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Post Content */
+  .post h2 {
+    font-size: 1.2rem;
+    margin: 10px 15px 5px;
+    color: #333;
+  }
+  
+  .post p {
+    font-size: 0.9rem;
+    margin: 5px 15px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .post strong {
+    font-weight: bold;
+  }
+  
+  /* WhatsApp Button */
+  .whatsapp-button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #25d366;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+    width: 90%; /* Botón alineado al contenedor */
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1da955;
+  }
+  
+  .whatsapp-button img {
+    width: 20px;
+    height: 20px;
+  }

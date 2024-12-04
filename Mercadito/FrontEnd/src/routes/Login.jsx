@@ -19,9 +19,10 @@ async function login(event) {
         });
 
     
-    const { status } = res.data;
+        const { status, userId } = res.data;
 
     if (status === true) {
+        localStorage.setItem("userId", userId);
         navigate("/Dashbord"); 
     } else {
         setErrorMessage("Credenciales incorrectas. Por favor, intenta de nuevo.");
