@@ -1,147 +1,75 @@
-/* Asegurar que el fondo cubra toda la página */
-body {
+html, body {
+  height: 100%;  /* Asegura que el body y el HTML ocupen toda la altura */
   margin: 0;
-  padding: 0;
-  height: 100vh; /* Altura del viewport */
+}
+
+body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: Arial, sans-serif; /* Fuente más moderna */
+  flex-direction: column;  /* Organiza los elementos de arriba hacia abajo */
+  font-family: Arial, sans-serif; /* Fuente para el contenido */
+  min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+  position: relative; /* Asegura que los elementos posicionados absolutamente se alineen respecto al body */
 }
 
-/* Contenedor del formulario */
-.container {
-  width: 100%;
-  max-width: 400px; /* Maximo ancho */
-  padding: 20px;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con mayor opacidad */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-  text-align: center; /* Centra todo el texto y contenido */
+.app {
+  flex-grow: 1;  /* Hace que el contenido ocupe el espacio disponible */
+  padding-bottom: 60px; /* Añade espacio inferior para que no se superponga con el footer */
 }
 
-/* Encabezado */
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Formulario */
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra los elementos */
-  gap: 15px; /* Espaciado entre los campos */
-}
-
-/* Etiquetas */
-.label {
-  font-size: 14px;
-  color: #555;
-  align-self: flex-start; /* Alinea las etiquetas a la izquierda */
-  margin-left: 5px;
-}
-
-/* Campos de entrada */
-.input {
-  width: 100%;
-  max-width: 350px; /* Limita el ancho */
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px; /* Bordes redondeados */
-  background-color: #f9f9f9;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: border 0.3s, box-shadow 0.3s;
-}
-
-.input:focus {
-  border: 1px solid #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-  outline: none; /* Elimina el borde azul predeterminado */
-}
-
-/* Botón */
-.button {
-  width: 100%;
-  max-width: 350px;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05); /* Pequeño aumento al pasar el mouse */
-}
-
-.button:active {
-  transform: scale(0.95); /* Reducir tamaño al hacer clic */
-}
-
-/* Ajustes de las etiquetas */
+/* Estilos para el Footer */
 .footer {
-  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #534f4f;  /* Fondo oscuro */
+  color: white;            /* Color de texto */
+  text-align: center;      /* Centra el texto */
+  padding: 15px 0;
   font-size: 14px;
-  color: #777;
+  left: 0;                 /* Asegura que el footer esté alineado al borde izquierdo */
+  right: 0;                /* Asegura que el footer se estire a lo largo del ancho de la página */
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del footer */
+  align-items: center;     /* Alinea verticalmente el contenido en el centro */
+  flex-direction: column;  /* Coloca los iconos y los nombres uno encima del otro */
 }
 
-/* Media Queries para pantallas pequeñas (móviles) */
+/* Estilo para los iconos de redes sociales */
+.social-links {
+  display: flex;
+  flex-direction: column;  /* Coloca los iconos encima de los nombres */
+  justify-content: center;
+  gap: 10px;               /* Espacio entre los iconos y los nombres */
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #22c076;  /* Color al hacer hover */
+}
+
+/* Media Queries para hacerlo responsivo */
 @media (max-width: 768px) {
-  .container {
-    width: 90%; /* Reduce el ancho para dispositivos pequeños */
-    padding: 15px;
+  .footer {
+    font-size: 12px;
   }
 
-  .header {
-    font-size: 22px; /* Disminuir tamaño de la fuente */
-    margin-bottom: 15px;
-  }
-
-  .input {
-    padding: 10px; /* Ajustar el padding */
-    font-size: 14px; /* Reducir tamaño de fuente */
-  }
-
-  .button {
-    padding: 10px; /* Ajustar el padding */
-    font-size: 14px; /* Reducir tamaño de fuente */
-  }
-
-  .label {
-    font-size: 12px; /* Reducir tamaño de la fuente en las etiquetas */
+  .social-links {
+    gap: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    width: 95%; /* Usar casi todo el ancho en pantallas más pequeñas */
-    padding: 10px;
+  .footer {
+    font-size: 10px;
   }
 
-  .header {
-    font-size: 20px; /* Ajuste adicional para pantallas muy pequeñas */
-  }
-
-  .input {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .button {
-    padding: 8px;
-    font-size: 14px;
+  .social-links {
+    gap: 10px;
   }
 }
