@@ -1,0 +1,61 @@
+
+
+/* Estilos para el enlace de navegación */
+a.nav-link {
+    margin: 0 15px;
+}
+
+/* Estilos para el contenedor del formulario */
+.formulario {
+    max-width: 450px; /* Cambiado a max-width */
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    color: white;
+    padding: 20px; /* Agregado padding para mejor espaciado */
+}
+
+
+/* Estilos para el formulario */
+form {
+    width: 100%; /* Cambiado a 100% para que ocupe todo el ancho del contenedor */
+    margin: auto;
+}
+
+/* Texto "Ingrese sus datos" */
+.datos {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px cyan,
+                 0px 0px 20px rgb(164, 237, 152),
+                 0px 0px 40px rgb(92, 221, 97),
+                 0px 0px 80px cyan;
+}
+
+/* Estilos para el texto de advertencia */
+p.advertencia {
+    color: white;
+}
+
+/* Estilos para el boton Registrarse */
+.btn {
+    box-shadow: 0px 0px 10px cyan,
+                0px 0px 20px rgb(164, 237, 152),
+                0px 0px 40px rgb(92, 221, 97),
+                0px 0px 80px cyan;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 576px) {
+    .formulario {
+        width: 80%; /* Aumenta el ancho en pantallas pequeñas */
+        padding: 15px; /* Ajusta el padding */
+    }
+
+    .datos {
+        font-size: 18px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+}
