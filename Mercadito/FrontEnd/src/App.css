@@ -14,18 +14,9 @@
 }
 
 
-
-.titulo {
-  margin-top: 20px;
-  color: #ffffff;
-  text-shadow: 0 0 10px cyan,
-  0 0 20px cyan,
-  0 0 40px cyan,
-  0 0 80px cyan;
-}
-
 .card-title1 {
   color: #ffffff;
+  margin-top: 5px;
   text-shadow: 0 0 10px cyan,
   0 0 20px cyan,
   0 0 40px cyan;
@@ -33,7 +24,7 @@
 
 .card-title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 2rem;
   color: #ffffff;
 }
@@ -47,7 +38,8 @@
   padding: 20px;
   /* margin: 20px auto; */
   max-width: 600px;
-  width: 100%;
+  width: 80%;
+  height: 400px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;  /* Para apilar los elementos verticalmente */
@@ -65,7 +57,7 @@
 .card-title {
   font-size: 1.5rem;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-top: -5px;
 }
 
 .card-text {
@@ -73,7 +65,6 @@
   border-radius: 10px;
   font-size: 1rem;
   color: white;
-  margin-top: 15px;
 }
 
 .logo-mercadito {
@@ -90,7 +81,8 @@
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
   align-items: center;
   transition: background-color 0.3s ease;  /* Suaviza el cambio de color */
   width: auto;

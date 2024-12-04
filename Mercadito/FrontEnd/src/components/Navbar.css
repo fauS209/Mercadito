@@ -1,6 +1,8 @@
 /* Estilos generales del navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2); /* Fondo oscuro translúcido */
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo oscuro translúcido */
+  border: 3px solid #ffffff1d;
+  backdrop-filter: blur(3px);
   padding: 7px;
   display: flex;
   justify-content: center; /* Centra los elementos */

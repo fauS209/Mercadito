@@ -16,11 +16,10 @@ function App() {
         <div className="card"  >
           <div className="card-body">
             <h1 className='card-title1'>El Mercadito Tigreño</h1>
-            <h5 className="card-title">Bienvenido a su mercadito de confianza</h5>
-            
-            <img src='/logoMercadito.png' alt='logo' className='logo-mercadito' />
+            <img src='/src/assets/logoMercadito.png' alt='logo' className='logo-mercadito' />
+            {/* <h5 className="card-title">Bienvenido a su mercadito de confianza</h5> */}
             <div className='card-text'>
-              <p>“Productos frescos y de calidad, apoyando a nuestros productores locales para que disfrutes de una compra confiable y responsable.”</p>
+              <p>“Productos frescos y de calidad, apoyando a nuestros productores locales  para que disfrutes de una compra confiable y responsable.”</p>
             </div>
           </div>
           <Link to={'/Register'} className='btn'> Registrate</Link>
