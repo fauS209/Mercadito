@@ -3,6 +3,7 @@ import "./css/Login.css";
 import Navbar from "../components/Navbar";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Footers from "../components/Footers";
 export const Login = () => {
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
@@ -74,6 +75,7 @@ async function login(event) {
         Login
         </button>
     </form>
+    <Footers/>
     </div>
 );
 };

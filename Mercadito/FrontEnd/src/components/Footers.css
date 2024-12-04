@@ -15,7 +15,7 @@ body {
 /* Contenedor del formulario */
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 400px; /* Maximo ancho */
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con mayor opacidad */
@@ -91,4 +91,57 @@ body {
   transform: scale(0.95); /* Reducir tamaño al hacer clic */
 }
 
+/* Ajustes de las etiquetas */
+.footer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
 
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Reduce el ancho para dispositivos pequeños */
+    padding: 15px;
+  }
+
+  .header {
+    font-size: 22px; /* Disminuir tamaño de la fuente */
+    margin-bottom: 15px;
+  }
+
+  .input {
+    padding: 10px; /* Ajustar el padding */
+    font-size: 14px; /* Reducir tamaño de fuente */
+  }
+
+  .button {
+    padding: 10px; /* Ajustar el padding */
+    font-size: 14px; /* Reducir tamaño de fuente */
+  }
+
+  .label {
+    font-size: 12px; /* Reducir tamaño de la fuente en las etiquetas */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%; /* Usar casi todo el ancho en pantallas más pequeñas */
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 20px; /* Ajuste adicional para pantallas muy pequeñas */
+  }
+
+  .input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

@@ -5,6 +5,7 @@ import mesaMadera from './assets/mesa-madera.jpg'
 import './App.css'
 import navbar, { Navbar } from './components/Navbar'
 import { Link } from 'react-router'
+import Footers from './components/Footers'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -40,7 +41,7 @@ function App() {
             </div>
           </div>
         </footer> */}
-
+        <Footers/>
       </div>
     </>
   );

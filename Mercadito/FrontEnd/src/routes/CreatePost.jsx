@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./css/CreatePost.css"
 import Navbar from "../components/Navbar";
+import Footers from "../components/Footers";
 
 const CreatePost = () => {
   const [formData, setFormData] = useState({
@@ -99,6 +100,7 @@ const CreatePost = () => {
       </form>
 
       {successMessage && <p>{successMessage}</p>} 
+      <Footers/>
     </div>
   );
 };

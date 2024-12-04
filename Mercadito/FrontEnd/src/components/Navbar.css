@@ -1,52 +1,108 @@
-div{
-    background-color: rgb(236, 225, 225);
-    text-align: center;
-    margin:auto;
-    height: auto;
+/* Estilos generales del navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+  padding: 15px;
+  display: flex;
+  justify-content: center; /* Centra los elementos */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
 }
 
-.navbar {
-    display: flex;
-    gap: 1rem;
-    background-color: #f8f9fa;
-    padding: 1rem;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .navbar a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }
-  
+/* Estilo de los enlaces del navbar */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px; /* Espaciado entre los enlaces */
+  transition: color 0.3s;
+}
 
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Botón del menú para móviles (hamburguesa) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+/* Menú de navegación */
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center; /* Centra los enlaces horizontalmente */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
   .navbar {
-    position: fixed; /* Fija la barra en la parte superior de la pantalla */
-    top: 0; /* Asegura que esté pegada al borde superior */
-    left: 0; /* Asegura que comience desde el borde izquierdo */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: 60px; /* Ajusta la altura según tu diseño */
-    background-color: #333; /* Color de fondo */
-    display: flex; /* Usamos flexbox para alinear los elementos */
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    align-items: center; /* Centra los enlaces verticalmente */
-    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
-    padding: 0 20px; /* Espaciado interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
-  
+
   .navbar a {
-    text-decoration: none;
-    color: #fff; /* Color del texto */
-    margin: 0 15px; /* Espaciado entre enlaces */
-    font-size: 1.2rem; /* Tamaño del texto */
-    transition: color 0.3s ease;
+    font-size: 14px; /* Reducir tamaño del texto en móviles */
+    margin: 5px 0; /* Ajustar el margen */
   }
-  
-  .navbar a:hover {
-    color: #1e90ff; /* Cambia de color al pasar el cursor */
+
+  .menu-toggle {
+    display: flex;
   }
-  
+
+  /* Cuando se activa el menú en móvil */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Media Queries para pantallas muy pequeñas (por debajo de 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 12px; /* Ajuste adicional para pantallas pequeñas */
+    justify-content: center;
+  }
+
+  .menu-toggle span {
+    width: 20px; /* Reducir tamaño de los iconos */
+    height: 2px;
+    justify-content: center;
+  }
+}

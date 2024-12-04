@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./css/Login.css";
 import Navbar from "../components/Navbar";
+import Footers from "../components/Footers";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -75,6 +76,7 @@ return (
         {errorMessage && <p className="error">{errorMessage}</p>}
         <button type="submit" className="button">Register</button>
     </form>
+    <Footers/>
     </div>
 );
 };
