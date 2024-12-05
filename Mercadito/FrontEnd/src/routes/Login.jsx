@@ -41,7 +41,7 @@ async function login(event) {
     <form className="form" onSubmit={login}>
     
         <div className="input-group">
-        <label htmlFor="email" className="label">
+        <label htmlFor="email" className="label" >
             Email
         </label>
         <input
@@ -49,6 +49,7 @@ async function login(event) {
 
             required
             className="input"
+            placeholder="Email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
         />
@@ -64,6 +65,7 @@ async function login(event) {
             name="password"
             required
             className="input"
+            placeholder="Password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
         />

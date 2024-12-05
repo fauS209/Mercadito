@@ -69,6 +69,7 @@ const CreatePost = () => {
           <input
             type="text"
             name="title"
+            placeholder="Item name"
             value={formData.title}
             onChange={handleInputChange}
             required
@@ -79,6 +80,7 @@ const CreatePost = () => {
           <textarea
             name="description"
             type="text"
+            placeholder="Describe your item"
             value={formData.description}
             onChange={handleInputChange}
             required
@@ -88,6 +90,7 @@ const CreatePost = () => {
           <label>Telephone Number</label>
           <input
             type="text"
+            placeholder="Phone number"
             name="telNumber"
             value={formData.telNumber}
             onChange={handleInputChange}

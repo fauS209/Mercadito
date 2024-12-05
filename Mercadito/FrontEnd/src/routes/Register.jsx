@@ -44,6 +44,7 @@ return (
             name="userName"
             required
             className="input"
+            placeholder="Write your name"
             value={userName}
             onChange={(event) => setUserName(event.target.value)}
         />
@@ -57,6 +58,7 @@ return (
             name="email"
             required
             className="input"
+            placeholder="Write your email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
         />
@@ -69,6 +71,7 @@ return (
             name="password"
             required
             className="input"
+            placeholder="Enter your password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
         />

@@ -57,7 +57,7 @@
 
 /* Estilo para los iconos de redes sociales */
 
-/* Media Queries para hacerlo responsivo */
+/* Media Queries para que sea responsivo */
 @media (max-width: 768px) {
   .footer {
     font-size: 12px;
