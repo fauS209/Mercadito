@@ -64,7 +64,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #007bff;
+    background-color: #25d366;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -74,7 +74,7 @@
   /* Efectos al pasar el mouse por el botón */
   .submit-btn:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Pequeño aumento al pasar el mouse */
+    transform: scale(1.05); 
   }
   
   /* Efectos al hacer clic en el botón */

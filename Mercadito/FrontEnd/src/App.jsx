@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import mesaMadera from './assets/mesa-madera.jpg'
-import './routes/css/App.css'
-import navbar, { Navbar } from './components/Navbar'
-import { Link } from 'react-router'
-import Footers from './components/Footers'
+import { useEffect } from "react";
+import "./css/App.css";
+import Navbar from "./components/Navbar";
+import { Link } from "react-router";
+import Footers from "./components/Footers";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  useEffect(() => {
+    document.body.classList.add("body-App");
+    return () => {
+      document.body.classList.remove("body-App");
+    };
+  }, []);
 
   return (
     <>
       <div className="app-container">
         <Navbar />
-        {/* <h1 className='titulo'>El Mercadito Tigreño</h1> */}
-        <div className="card"  >
+        <div className="card">
           <div className="card-body">
-            <h1 className='card-title1'>El Mercadito Tigreño</h1>
-            <img src='/src/assets/logoMercadito.png' alt='logo' className='logo-mercadito' />
-            {/* <h5 className="card-title">Bienvenido a su mercadito de confianza</h5> */}
-            <div className='card-text'>
-              <p>“Productos frescos y de calidad, apoyando a nuestros productores locales  para que disfrutes de una compra confiable y responsable.”</p>
+            <h1 className="card-title1">El Mercadito Tigreño</h1>
+            <img
+              src="/src/assets/logoMercadito.png"
+              alt="logo"
+              className="logo-mercadito"
+            />
+            <div className="card-text">
+              <p>
+                “Productos frescos y de calidad, apoyando a nuestros productores
+                locales para que disfrutes de una compra confiable y
+                responsable.”
+              </p>
             </div>
           </div>
-          <Link to={'/Register'} className='btn'> Registrate</Link>
+          <Link to="/Register" className="btn">
+            Registrate
+          </Link>
         </div>
-        
-        
-        <Footers/>
+        <footer><Footers/> </footer>
       </div>
     </>
   );
 }
 
-export default App
+export default App;

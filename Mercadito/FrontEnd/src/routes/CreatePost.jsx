@@ -12,12 +12,12 @@ const CreatePost = () => {
   });
   const [file, setFile] = useState(null);
   const [userId, setUserId] = useState(null);
-  const [successMessage, setSuccessMessage] = useState(null); // Estado para el mensaje
+  const [successMessage, setSuccessMessage] = useState(null);
 
   useEffect(() => {
     const storedUserId = localStorage.getItem("userId");
     if (storedUserId) {
-      setUserId(storedUserId); // Recupera el ID del usuario
+      setUserId(storedUserId); 
     }
   }, []);
 
@@ -43,7 +43,7 @@ const CreatePost = () => {
       data.append("file", file);
       data.append(
         "postDto",
-        JSON.stringify({ ...formData, userId }) // Incluye el `userId`
+        JSON.stringify({ ...formData, userId }) 
       );
 
       const response = await axios.post("http://localhost:8080/api/v1/mercadito/posts/create", data, {
@@ -52,10 +52,10 @@ const CreatePost = () => {
         },
       });
 
-      setSuccessMessage("¡Post creado exitosamente!"); // Actualiza el mensaje de éxito
+      setSuccessMessage("¡Post creado exitosamente!"); 
     } catch (error) {
       console.error("Error al crear el post:", error);
-      setSuccessMessage("Ocurrió un error al crear el post."); // Actualiza el mensaje de error
+      setSuccessMessage("Ocurrió un error al crear el post.");
     }
   };
 
@@ -64,7 +64,7 @@ const CreatePost = () => {
       <Navbar/>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Title:</label>
+          <label>Title</label>
           <input
             type="text"
             name="title"
@@ -74,16 +74,17 @@ const CreatePost = () => {
           />
         </div>
         <div>
-          <label>Description:</label>
+          <label>Description</label>
           <textarea
             name="description"
+            type="text"
             value={formData.description}
             onChange={handleInputChange}
             required
           ></textarea>
         </div>
         <div>
-          <label>Telephone Number:</label>
+          <label>Telephone Number</label>
           <input
             type="text"
             name="telNumber"
@@ -93,7 +94,7 @@ const CreatePost = () => {
           />
         </div>
         <div>
-          <label>File:</label>
+          <label>File</label>
           <input type="file" onChange={handleFileChange} required />
         </div>
         <button type="submit">Create Post</button>

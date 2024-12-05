@@ -7,7 +7,6 @@ body {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   font-family: Arial, sans-serif; /* Fuente más moderna */
 }
@@ -21,6 +20,7 @@ body {
   background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con mayor opacidad */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
   text-align: center; /* Centra todo el texto y contenido */
+  
 }
 
 /* Encabezado */
@@ -76,7 +76,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: #007bff;
+  background-color: #25d366;
   border: none;
   border-radius: 8px;
   cursor: pointer;

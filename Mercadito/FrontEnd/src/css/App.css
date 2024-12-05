@@ -1,51 +1,36 @@
-/* General Styles */
+.body-App {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .app-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-image: url('/src/assets/mesa-madera.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; /* La imagen cubre toda la pantalla */
-  background-position: center center; /* La imagen siempre está centrada */
-  background-attachment: fixed; /* Fija el fondo durante el scroll */
-  min-height: 100vh; /* La altura mínima es 100% de la pantalla */
-  max-width: 100%; /* Asegura que el contenedor cubra todo el ancho de la pantalla */;
-
-
+  max-width: 100%;
 }
-
-
-.card-title1 {
-  color: #ffffff;
-  margin-top: 5px;
-  text-shadow: 0 0 10px cyan,
-  0 0 20px cyan,
-  0 0 40px cyan;
-}
-
-.card-title {
-  text-align: center;
-  margin-top: 5px;
-  font-size: 2rem;
-  color: #ffffff;
-}
-
 
 .card {
-  background-color: rgba(0, 0, 0, 0.2);
-  /* border: 1px solid #ddd; */
-  margin-top: 15%;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   padding: 20px;
-  /* margin: 20px auto; */
   max-width: 600px;
   width: 80%;
-  height: 400px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;  /* Para apilar los elementos verticalmente */
-  justify-content: center; /* Centrar el contenido verticalmente */
-  align-items: center;     /* Centrar el contenido horizontalmente */
-  text-align: center;      /* Asegura que el texto dentro de la tarjeta esté centrado */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-body {
@@ -54,10 +39,10 @@
   margin-bottom: 20px;
 }
 
-.card-title {
-  font-size: 1.5rem;
+.card-title1 {
   color: #ffffff;
-  margin-top: -5px;
+  margin-top: 5px;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
 }
 
 .card-text {
@@ -68,7 +53,7 @@
 }
 
 .logo-mercadito {
-  max-width: 150px; /* Evitar que el logo sea demasiado grande */
+  max-width: 150px;
   height: auto;
   margin-bottom: 15px;
 }
@@ -81,11 +66,8 @@
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
-  margin-top: 0;
   margin-bottom: 20px;
-  align-items: center;
-  transition: background-color 0.3s ease;  /* Suaviza el cambio de color */
-  width: auto;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -93,28 +75,10 @@
   color: black;
 }
 
-footer {
-  margin-top: 40px;
-  text-align: center;
-}
-
-/* Diseño Responsive  */
 @media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
   .card {
     padding: 15px;
     margin-top: 60%;
-  }
-
-  .card-title {
-    font-size: 1.2rem;
-  }
-
-  .card-text {
-    font-size: 0.9rem;
   }
 
   .btn {
@@ -124,20 +88,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 1.2rem;
-  }
-
   .card {
     padding: 10px;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-text {
-    font-size: 0.8rem;
   }
 
   .btn {
