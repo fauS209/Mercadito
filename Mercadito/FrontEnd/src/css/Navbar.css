@@ -25,8 +25,8 @@
 }
 
 .navbar a:hover {
-  color: greenyellow;
-  font-size: 17px;
+  color: #25d366;
+  font-size: 20px;
 }
 /* Botón del menú para móviles */
 .menu-toggle {

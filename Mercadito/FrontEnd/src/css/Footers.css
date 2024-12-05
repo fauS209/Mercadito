@@ -51,7 +51,7 @@
 }
 
 .footer-icon:hover {
-  color: greenyellow;
+  color: #25d366;
   transform: scale(1.2); /* Efecto de escala en el hover */
 }
 

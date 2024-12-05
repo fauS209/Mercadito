@@ -24,7 +24,7 @@ export const Navbar = () => {
 
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/Login">Login</Link></li>
-        <li><Link to="/App">App</Link></li>
+        <li><Link to="/App">Home</Link></li>
         <li><Link to="/Contact">Contact</Link></li>
         <li><Link to="/Dashbord">Dashboard</Link></li>
         <li><Link to="/CreatePost">CreatePost</Link></li>

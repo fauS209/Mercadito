@@ -66,7 +66,7 @@ const Dashbord = () => {
           </div>
         ))}
       </div>
-        <Footers/>
+        <footer className="footerDash"> <Footers/>   </footer> 
     </div>
   );
 };

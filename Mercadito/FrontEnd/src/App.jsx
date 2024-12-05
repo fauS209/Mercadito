@@ -25,7 +25,7 @@ function App() {
               className="logo-mercadito"
             />
             <div className="card-text">
-              <p>
+              <p >
                 “Productos frescos y de calidad, apoyando a nuestros productores
                 locales para que disfrutes de una compra confiable y
                 responsable.”
@@ -33,7 +33,7 @@ function App() {
             </div>
           </div>
           <Link to="/Register" className="btn">
-            Registrate
+          Enter here
           </Link>
         </div>
         <footer><Footers/> </footer>

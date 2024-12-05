@@ -31,7 +31,7 @@ export const Contact = () => {
         <h1>Contact us</h1>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
-            <label htmlFor="name">Nombre</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -42,7 +42,7 @@ export const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Correo Electronico</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -53,7 +53,7 @@ export const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Mensaje</label>
+            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
@@ -62,7 +62,7 @@ export const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="submit-btn">Enviar</button>
+          <button type="submit" className="submit-btn">Send</button>
         </form>
       </section>
       <Footers />

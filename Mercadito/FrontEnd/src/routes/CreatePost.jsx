@@ -34,7 +34,7 @@ const CreatePost = () => {
     e.preventDefault();
 
     if (!file) {
-      setSuccessMessage("Por favor, selecciona un archivo.");
+      setSuccessMessage("Please select a file");
       return;
     }
 
@@ -63,6 +63,7 @@ const CreatePost = () => {
     <div>
       <Navbar/>
       <form onSubmit={handleSubmit}>
+        <h2 type ="text">Sell a product</h2>
         <div>
           <label>Title</label>
           <input

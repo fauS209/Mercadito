@@ -20,8 +20,8 @@
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
   padding: 20px;
   max-width: 600px;
   width: 80%;
@@ -40,16 +40,18 @@
 }
 
 .card-title1 {
-  color: #ffffff;
+  color: #322f2f;
   margin-top: 5px;
-  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
 }
 
 .card-text {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  background-color: rgb(229, 229, 229);
   font-size: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  border-style: ridge;
+  border-color: rgb(187, 191, 191);
+
 }
 
 .logo-mercadito {

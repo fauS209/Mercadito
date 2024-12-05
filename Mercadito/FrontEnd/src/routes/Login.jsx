@@ -42,7 +42,7 @@ async function login(event) {
     
         <div className="input-group">
         <label htmlFor="email" className="label">
-            Correo Electrónico
+            Email
         </label>
         <input
             type="email"
@@ -56,7 +56,7 @@ async function login(event) {
 
         <div className="input-group">
         <label htmlFor="password" className="label">
-            Contraseña
+            Password
         </label>
         <input
             type="password"
@@ -72,7 +72,7 @@ async function login(event) {
         {errorMessage && <p className="error">{errorMessage}</p>}
 
         <button type="submit" className="button">
-        Login
+        Sign in
         </button>
     </form>
     <Footers/>

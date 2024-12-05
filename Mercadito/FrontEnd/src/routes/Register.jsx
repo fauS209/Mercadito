@@ -34,10 +34,10 @@ async function register(event) {
 return (
     <div className="container">
     <Navbar />
-        <h2 className="header">Registrarse</h2>
+        <h2 className="header">Personal information</h2>
         <form className="form" onSubmit={register}>
         <div className="input-group">
-            <label htmlFor="userName" className="label">Nombre</label>
+            <label htmlFor="userName" className="label">Name</label>
                 <input
             type="text"
             id="userName"
@@ -50,7 +50,7 @@ return (
         </div>
 
         <div className="input-group">
-        <label htmlFor="email" className="label">Correo Electrónico</label>
+        <label htmlFor="email" className="label">Email</label>
         <input
             type="email"
             id="email"
@@ -62,7 +62,7 @@ return (
         />
         </div>
         <div className="input-group">
-        <label htmlFor="password" className="label">Contraseña</label>
+        <label htmlFor="password" className="label">Password</label>
         <input
             type="password"
             id="password"
