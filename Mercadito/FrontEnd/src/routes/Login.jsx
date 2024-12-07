@@ -22,11 +22,13 @@ async function login(event) {
     
         const { status, userId } = res.data;
 
-    if (status === true) {
-        localStorage.setItem("userId", userId);
-        navigate("/Dashbord"); 
-    } else {
-        setErrorMessage("Credenciales incorrectas. Por favor, intenta de nuevo.");
+        if (status === true) {
+            localStorage.setItem("userId", userId);
+            localStorage.setItem("isLoggedIn", "true"); // Guardamos el estado de autenticación
+            navigate("/Dashbord");
+        } else {
+            setErrorMessage("Credenciales incorrectas. Por favor, intenta de nuevo.");
+        
     }
     } catch (error) {
         setErrorMessage("Ocurrió un error al iniciar sesión. Verifica tu conexión.");

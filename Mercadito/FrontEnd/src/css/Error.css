@@ -1,0 +1,47 @@
+/* General styling for the error page */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centra verticalmente */
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the title */
+  .error-page h1 {
+    font-size: 3rem; /* Tamaño grande para el título */
+    color: #d9534f; /* Rojo para enfatizar el error */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the description */
+  .error-page p {
+    font-size: 1.5rem; /* Letra más grande para el texto */
+    color: #555; /* Gris para un texto suave */
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for the button */
+  .error-page .btn {
+    display: inline-block;
+    font-size: 1.2rem; /* Tamaño del texto del botón */
+    padding: 10px 20px; /* Espaciado interno */
+    color: #fff; /* Texto blanco */
+    background-color: #5cb85c; /* Verde para un mensaje positivo */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Animación suave */
+  }
+  
+  /* Hover effect for the button */
+  .error-page .btn:hover {
+    background-color: #4cae4c; /* Verde más oscuro al pasar el cursor */
+    cursor: pointer;
+  }
+  

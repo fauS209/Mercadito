@@ -5,6 +5,7 @@ import Contact from './routes/Contact.jsx';
 import Login from './routes/Login.jsx';
 import CreatePost from './routes/CreatePost.jsx';
 import Register from './routes/Register.jsx';
+import Error from './routes/Error.jsx';
 
 export const router = createBrowserRouter ([
     {path:"/", element: <App/>},
@@ -14,4 +15,5 @@ export const router = createBrowserRouter ([
     {path:"/CreatePost", element: <CreatePost/>},
     {path:"/Register", element: <Register/>},
     {path:"/Contact", element: <Contact />},
+    {path:"/Error", element: <Error/>},
     ] );

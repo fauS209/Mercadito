@@ -3,13 +3,23 @@ import "../css/Dashbord.css";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footers from "../components/Footers";
+import { useNavigate } from "react-router-dom";
 
 const Dashbord = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    // Validación de autenticación
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    if (isLoggedIn !== "true") {
+      navigate("/Error"); // Redirige si no está autenticado
+      return;
+    }
+
+    // Fetch de posts si está autenticado
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
@@ -25,14 +35,14 @@ const Dashbord = () => {
     };
 
     fetchPosts();
-  }, []);
+  }, [navigate]);
 
   if (loading) return <p>Cargando posts...</p>;
   if (error) return <p>{error}</p>;
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <h1>El Mercadito Trigreño</h1>
       <div className="posts-container">
         {posts.map((post) => (
@@ -66,7 +76,9 @@ const Dashbord = () => {
           </div>
         ))}
       </div>
-        <footer className="footerDash"> <Footers/>   </footer> 
+      <footer className="footerDash">
+        <Footers />
+      </footer>
     </div>
   );
 };
