@@ -54,6 +54,23 @@
   margin: 0 15px;
 }
 
+.logout-button {
+  background-color: #ff4d4d; /* Color rojo para indicar cierre de sesión */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000; /* Oscurecer el rojo al pasar el cursor */
+}
+
+
 /* Media Queries para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .navbar {
